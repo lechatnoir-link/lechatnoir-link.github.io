@@ -10,10 +10,10 @@ Background
 <h2 id="Introduction">Introduction</h2>
 <h3 id="项目结构">项目结构:</h3>
 <ul>
-<li><em><a target="_blank" rel="noopener" href="http://api.py">api.py</a></em>  主要交互逻辑的文件，负责为前端提供api调用，以及对不同调用维护相应数据库；</li>
-<li><em><a target="_blank" rel="noopener" href="http://model.py">model.py</a></em> 模型文件，为了避免每次api和数据库交互修改都要重新载入模型，而LLM每次载入的时间很长，因此将模型独立出来，形成自己的接口，一次部署，多次使用，极少下线；</li>
-<li><em><a target="_blank" rel="noopener" href="http://utils.py">utils.py</a></em> 一些功能函数，包括整理用户输入的函数、邮件地址验证和自动发送邮件的相关配置；</li>
-<li><em>ban.txt</em> 违禁词的列表，每个违禁词为一行，避免用户随便问问题，恶意套取和截图模型的输出</li>
+<li><code>api.py</code>  主要交互逻辑的文件，负责为前端提供api调用，以及对不同调用维护相应数据库；</li>
+<li><code>model.py</code> 模型文件，为了避免每次api和数据库交互修改都要重新载入模型，而LLM每次载入的时间很长，因此将模型独立出来，形成自己的接口，一次部署，多次使用，极少下线；</li>
+<li><code>utils.py</code> 一些功能函数，包括整理用户输入的函数、邮件地址验证和自动发送邮件的相关配置；</li>
+<li><code>ban.txt</code> 违禁词的列表，每个违禁词为一行，避免用户随便问问题，恶意套取和截图模型的输出</li>
 </ul>
 <h3 id="基本流程：">基本流程：</h3>
 <p>首先确保环境搭好，数据库的表建立完毕</p>
